@@ -23,6 +23,7 @@ function initialize(app){
     app.get('/graph.html', function(req, res){
         res.render('graph.html');
     });
+
 }
 
 exports.initialize = initialize;

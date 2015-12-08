@@ -129,7 +129,7 @@ module.exports = function (grunt) {
         csslintrc: 'build/less/.csslintrc'
       },
       dist: [
-        'dist/css/AdminLTE.css',
+        'dist/css/AdminLTE.css'
       ]
     },
 
@@ -159,6 +159,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   // Lint CSS
   grunt.loadNpmTasks('grunt-contrib-csslint');
+
 
   // The default task (running "grunt" in console) is "watch"
   grunt.registerTask('default', ['watch']);
