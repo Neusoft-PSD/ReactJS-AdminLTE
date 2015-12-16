@@ -14,14 +14,10 @@ app.set('view engine', 'html');
 app.engine('html', consolidate.handlebars);
 app.use(express.static('./public')); //Set the folder from where you serve all static files like images, css, javascripts, libraries etc
 app.use(bodyParser.urlencoded({ extended: true }));
-var portNumber = 8080;
+var portNumber = 8180;
+var bindIP='192.168.1.199';
 
-http.createServer(app).listen(portNumber, function(){
-	console.log('Server listening at port '+ portNumber);
+http.createServer(app).listen(portNumber,bindIP, function(){
+	console.log('Server listening at port  (9559771)'+ portNumber);
 	routes.initialize(app);
 });
-
-/*
-
-
-*/
