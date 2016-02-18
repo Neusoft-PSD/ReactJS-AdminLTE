@@ -3,7 +3,7 @@
 ReactJS version of the original AdminLTE dashboard - https://github.com/almasaeed2010/AdminLTE
 
 ### Patch for NextUI Tokens:
-1. in package.json add "neusoft-psd-ux_design-tokens" dependencies module
+1. in package.json add "[neusoft-psd-ux_design-tokens](https://www.npmjs.com/package/neusoft-psd-ux_design-tokens)" dependencies module
 2. (TODO by grunt)move the file force-base.less from /node_modules/neusoft-psd-ux_design-tokens/dist to /build/less/,and rename to nextui-tokens.less
 3. add bellow codes in /build/less/variables.less to use Neusoft PSD UE tokens 
 ```
